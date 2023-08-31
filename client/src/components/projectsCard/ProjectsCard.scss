@@ -1,0 +1,22 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.project-card{
+    width: rem(452);
+    &__img-wrapper{
+        width: 100%;
+        height: rem(420);
+        display: flex;
+        justify-content: center;
+        border-radius: rem(35);
+        overflow: hidden;
+    }
+
+    &__title{
+        @include titleStyle(800, 25, 29);
+        margin-top: rem(25);
+    }
+
+    &__subtitle{
+        @include subtitleStyle(22);
+    }
+}

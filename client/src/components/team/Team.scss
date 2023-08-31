@@ -1,0 +1,45 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.team {
+  width: 100%;
+  min-height: rem(1267);
+  padding: rem(164) 0;
+  
+  &__container {
+    @include main-container();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text{
+    max-width: 60%;
+    text-align: center;
+  }
+
+  &__subtitle {
+    @include subtitleStyle();
+  }
+  &__subtitle,
+  &__title {
+    text-transform: capitalize;
+  }
+  &__title {
+    margin-top: rem(8);
+    margin-bottom: rem(16); 
+    @include titleStyle();
+  }
+
+  &__para{
+    line-height: 165%;
+  }
+
+  &__content {
+    width: 100%;
+    margin-top: rem(60);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: rem(25);
+    padding-bottom: rem(102);
+  }
+}

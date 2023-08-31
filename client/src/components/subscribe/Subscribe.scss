@@ -1,0 +1,32 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.subscribe {
+  width: 100%;
+  padding-bottom: rem(117);
+
+  &__container {
+    @include main-container();
+    padding: rem(71) rem(105);
+    min-height: rem(323);
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(30);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: rem(30);
+    background-color: #37b5de;
+    background: url("../../assets/subscribe/fresh.png") center/cover;
+  }
+  &__title {
+    flex: 0 1 rem(357);
+    @include titleStyle();
+    color: $white-color;
+  }
+
+  @include md-screens(){
+    padding: rem(60);
+    &__container {
+      padding: rem(35) rem(35);
+    }
+  }
+}

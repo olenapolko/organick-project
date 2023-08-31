@@ -1,0 +1,166 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.footer {
+  width: 100%;
+  min-height: rem(492);
+  margin-top: rem(16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @extend %main-text-style;
+
+  &__container {
+    @include main-container();
+    min-height: rem(336);
+    display: flex;
+    gap: vw(92);
+  }
+  .contacts {
+    flex: 0 1 vw(285);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: rem(32);
+
+    &__title {
+      @include titleStyle(700, 30, 35);
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: end;
+      gap: rem(38);
+    }
+
+    &__item-title {
+      font-weight: 700;
+    }
+  }
+
+  &__socials-wrapper {
+    width: rem(543);
+    min-height: 100%;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 1px;
+      position: absolute;
+      background-color: $dark-gray;
+      top: 0;
+    }
+    &::before {
+      left: rem(-41);
+    }
+    &::after {
+      right: rem(-41);
+    }
+    .footer-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__description {
+        margin-top: rem(23);
+        padding: 0 rem(16);
+        text-align: center;
+      }
+    }
+    .socials {
+      margin-top: rem(49);
+      display: flex;
+      justify-content: center;
+      gap: rem(15);
+
+      &__link {
+        display: inline-block;
+        width: rem(60);
+        height: rem(60);
+        border-radius: 50%;
+      }
+
+      .instagram-link {
+        background: $light-green url("../../assets/footer/insta.svg") center
+          no-repeat;
+      }
+
+      .facebook-link {
+        background: $light-green url("../../assets/footer/fb.svg") center
+          no-repeat;
+      }
+
+      .twitter-link {
+        background: $light-green url("../../assets/footer/twiter.svg") center
+          no-repeat;
+      }
+      
+      .pintrest-link {
+        background: $light-green url("../../assets/footer/pintrest.svg") center
+          no-repeat;
+      }
+    }
+  }
+
+  .utility {
+    flex: 0 1 vw(285);
+    min-width: rem(181);
+
+    &__title {
+      @include titleStyle(700, 30, 35);
+    }
+    &__list {
+      margin-top: rem(22);
+      line-height: rem(49);
+    }
+    &__item {
+    }
+  }
+  &__copyright {
+    margin-top: rem(109);
+    min-height: rem(47);
+    text-align: center;
+
+    .bold-text {
+      font-weight: 700;
+    }
+  }
+  @include md-screens() {
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: vw(180);
+    }
+
+    &__socials-wrapper{
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .contacts{
+      &__list {
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    &__utility{
+      text-align: center;
+    }
+  }
+
+  @include sm-screens(){
+    .contacts{
+      margin: rem(40) 0;
+    }
+
+    &__copyright{
+      margin-top: rem(60);
+    }
+  }
+}

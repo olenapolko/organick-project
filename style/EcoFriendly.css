@@ -1,0 +1,59 @@
+.eco-friendly__item-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 165%;
+  color: #525c60;
+}
+
+.eco-friendly {
+  background: url("../../assets/eco/field.png") 0 0/auto 100% no-repeat;
+  width: 100%;
+  min-height: 58.1875rem;
+  padding: 6.25rem 0 6.75rem;
+}
+.eco-friendly__container {
+  width: 76.0416666667vw;
+  padding: 0 0.9375em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.eco-friendly__content {
+  min-height: 45.1875rem;
+  padding: 4.0625vw 3.75vw 4.0104166667vw 4.6354166667vw;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 49.3125rem;
+          flex: 0 1 49.3125rem;
+  margin-left: auto;
+  border-radius: 1.875rem;
+  background-color: #ffffff;
+}
+.eco-friendly__subtitle {
+  font-family: "Yellowtail", cursive;
+  color: #7EB693;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.eco-friendly__title {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 3.125rem;
+  font-weight: 800;
+  line-height: 3.6875rem;
+  margin-top: 0.5rem;
+}
+.eco-friendly__item {
+  margin-top: 2.1875rem;
+  width: 33.0729166667vw;
+}
+.eco-friendly__item-title {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  line-height: 1.8125rem;
+}
+.eco-friendly__item-text {
+  font-weight: 500;
+}/*# sourceMappingURL=EcoFriendly.css.map */

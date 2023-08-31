@@ -1,0 +1,63 @@
+@import "../../styles/variables", "../../styles/functions";
+.testimonial {
+  width: 100%;
+  min-height: rem(1267);
+  padding: rem(164) 0;
+  background: url("../../assets/testimonial/cinnamon.png") no-repeat center/cover;
+
+  &__container {
+    @include main-container();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subtitle {
+    @include subtitleStyle();
+  }
+
+  &__subtitle,
+  &__title {
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: rem(8);
+    @include titleStyle();
+  }
+
+  &__content {
+    margin-top: rem(60);
+    display: flex;
+    justify-content: center;
+    padding-bottom: rem(102);
+  }
+
+  &__achievements {
+    width: 100%;
+    padding-top: rem(102);
+    display: flex;
+    justify-content: space-around;
+    gap: rem(20);
+    position: relative;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      border-top: rem(1) solid #e0e0e0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  @include md-screens() {
+    padding: rem(120) 0;
+    &__achievements {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: rem(40);
+    }
+  }
+}

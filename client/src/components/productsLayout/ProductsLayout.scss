@@ -1,0 +1,52 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.products-layout {
+  width: 100%;
+  // min-height: rem(1720);
+  padding: vw(90) 0 vw(140);
+  position: relative;
+  
+  &__container {
+    @include main-container();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__subtitle {
+    @include subtitleStyle();
+    text-transform: capitalize;
+  }
+  &__title {
+    @include titleStyle();
+    text-transform: capitalize;
+    margin-top: rem(8);
+  }
+
+  &__content {
+    margin-top: rem(40);
+    margin-bottom: rem(122);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(20);
+  }
+  &__detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(244, 244, 244, 0.82);
+    display: flex;
+    align-items: center;
+  }
+
+  @include md-screens() {
+    padding: vw(80) 0;
+
+    &__container {
+      width: 100%;
+    }
+  }
+
+}

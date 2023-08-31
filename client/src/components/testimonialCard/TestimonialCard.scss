@@ -1,0 +1,38 @@
+@import "../../styles/variables", "../../styles/functions";
+.testimonial-card {
+  flex: 0 1 vw(780);
+  min-height: rem(348);
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  align-items: center;
+  @extend %main-text-style;
+  font-weight: 400;
+
+  &__avatar {
+    border-radius: 50%;
+    display: block;
+    width: rem(115);
+    height: rem(115);
+    object-fit: cover;
+  }
+  &__rating {
+  }
+  #stars {
+    fill: $star-color;
+  }
+  &__text {
+    padding-bottom: rem(5);
+    text-align: center;
+    padding: 0 rem(8);
+    font-size: rem(18);
+    line-height: em(30);
+  }
+  &__name {
+    @include titleStyle(600, 25, 29);
+  }
+  &__position {
+    font-size: rem(15);
+    line-height: rem(25);
+  }
+}

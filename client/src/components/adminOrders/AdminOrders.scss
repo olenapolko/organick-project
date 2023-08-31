@@ -1,0 +1,59 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.admin-orders {
+  width: 100%;
+  padding: rem(164) 0;
+  
+  &__container {
+    @include main-container();
+  }
+
+  &__subtitle {
+    @include subtitleStyle();
+  }
+  &__subtitle,
+  &__title {
+    text-transform: capitalize;
+  }
+  &__title {
+    margin-top: rem(8);
+    margin-bottom: rem(16); 
+    @include titleStyle();
+  }
+
+  &__content {
+    margin-top: rem(16);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1rem;
+    text-align: left;
+
+    th,
+    td {
+      padding: rem(8);
+      border-bottom: 1px solid $dark-gray;
+    
+    }
+
+    th {
+        @include titleStyle(800, 24, 29);
+        background-color: #8cbd9e;
+        color: $white-color;
+    }
+
+    tbody tr {
+        @extend %main-text-style;
+        transition: background-color 0.2s ease-in-out;
+
+
+      &:hover {
+        background-color: #EFF6F1;
+      }
+    }
+  }
+
+}

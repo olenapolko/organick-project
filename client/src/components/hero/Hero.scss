@@ -1,0 +1,30 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.hero {
+  width: 100%;
+  min-height: rem(898);
+  display: flex;
+  align-items: center;
+  background-color: #d3cbcf;
+  background: url("../../assets/hero/Background1.svg") center/cover
+      no-repeat,
+    url("../../assets/hero/background.png") center/cover no-repeat;
+
+  &__container {
+    @include main-container();
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    flex: 0 1 rem(530);
+  }
+  &__subtitle {
+    @include subtitleStyle();
+    color: $bg-light-green;
+  }
+  &__title {
+    @include titleStyle(800, 70, 82);
+    margin-top: rem(8);
+    margin-bottom: rem(23);
+  }
+}

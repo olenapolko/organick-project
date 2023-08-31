@@ -1,0 +1,90 @@
+@import "../../../styles/variables", "../../../styles/functions";
+
+.not-found {
+  width: 100%;
+  height: vw(898);
+  min-height: rem(700);
+  background-color: #bbc9c9;
+  background: url("../../../assets/notFound/background.png") center/cover
+    no-repeat;
+  display: flex;
+  align-items: center;
+  $content-width: 533;
+
+  &__container {
+    @include main-container();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    flex: 0 1 rem(533);
+    min-width: rem(235);
+    min-height: rem(354);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__image {
+    width: rem(502);
+    min-width: rem(250);
+    height: rem(219);
+    background: url("../../../assets/notFound/404.svg") center/cover no-repeat;
+  }
+  &__title {
+    @include titleStyle(800, 70, 82);
+    text-align: center;
+  }
+  &__text {
+    @extend %main-text-style;
+    font-size: clamp(1rem, vw(18), 1.12rem);
+    line-height: 1.66em;
+    font-weight: 600;
+    text-align: center;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  &__actions {
+    margin-top: rem(40);
+    width: vw($content-width);
+  }
+  &__btn {
+    width: rem(275);
+  }
+  @include md-screens(){
+    &__title {
+      @include titleStyle(800, 58, 64);
+    }
+  }
+  @include sm-screens() {
+    &__title {
+      @include titleStyle(800, 40, 45);
+    }
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("../../../assets/notFound/background.png") center/cover no-repeat;
+    &__btn {
+      width: rem(235);
+    }
+  }
+  @media (max-width: 600px) {
+    &__container {
+      width: 100%;
+      justify-content: center;
+    }
+    &__actions {
+      width: 50%;
+    }
+    &__image {
+      width: rem(350);
+      height: rem(180);
+      background-size: 100%;
+    }
+  }
+}

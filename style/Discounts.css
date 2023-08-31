@@ -1,0 +1,23 @@
+.discounts {
+  width: 100%;
+  padding: 9.625rem 0 11.875rem;
+}
+.discounts__container {
+  width: 76.0416666667vw;
+  padding: 0 0.9375em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.25rem;
+}
+@media (max-width: 767.98px) {
+  .discounts {
+    padding: 5rem 0;
+  }
+}/*# sourceMappingURL=Discounts.css.map */

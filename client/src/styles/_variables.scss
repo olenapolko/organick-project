@@ -1,0 +1,29 @@
+// Colors
+$main-text-color: #274c5b;
+$text-color: #525c60;
+$bg-light-green: #7EB693;
+$header-bg: #ffffffda;
+$dark-gray: #d4d4d4;
+$white-smoke: #f9f8f8;
+$white-color: #ffffff;
+$light-green: #eff6f1;
+$yellow-btn: #efd372;
+$star-color: #ffa858;
+
+// Fonts
+$main-font-name: "Open Sans", sans-serif;
+$title-font-name: "Roboto", sans-serif;
+$subtitle-font-name: "Yellowtail", cursive;
+
+// Container
+$min-width: 320;
+$max-width: 1920;
+$max-width-container: 1430;
+$container-padding: 15;
+$container-width: $max-width-container + $container-padding * 2;
+
+// Break-points
+$lg: $container-width; 
+$md: 991.98px; 
+$sm: 767.98px;
+$xs: 479.98px;

@@ -1,0 +1,83 @@
+.what-we-grow {
+  width: 100%;
+  padding: 12.5rem 0;
+  background: url("../../assets/services/pistachios.png") no-repeat center;
+  background-size: 30%;
+}
+.what-we-grow__container {
+  width: 76.0416666667vw;
+  padding: 0 0.9375em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.what-we-grow__subtitle {
+  font-family: "Yellowtail", cursive;
+  color: #7EB693;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.what-we-grow__subtitle, .what-we-grow__title {
+  text-transform: capitalize;
+  text-align: center;
+}
+.what-we-grow__title {
+  margin-top: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 3.125rem;
+  font-weight: 800;
+  line-height: 3.6875rem;
+  max-width: 30.625rem;
+}
+.what-we-grow__content {
+  width: 100%;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-size: 50%;
+}
+.what-we-grow__content-left {
+  text-align: end;
+}
+@media (max-width: 1500px) {
+  .what-we-grow {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.8))), url("../../assets/services/pistachios.png") no-repeat center;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url("../../assets/services/pistachios.png") no-repeat center;
+  }
+}
+@media (max-width: 1230px) {
+  .what-we-grow {
+    padding: 3.75rem 0;
+  }
+  .what-we-grow__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .what-we-grow__content-left {
+    text-align: center;
+  }
+}
+@media (max-width: 991.98px) {
+  .what-we-grow {
+    padding: 5rem 0;
+  }
+}/*# sourceMappingURL=WhatWeGrow.css.map */

@@ -1,0 +1,45 @@
+.subscribe {
+  width: 100%;
+  padding-bottom: 7.3125rem;
+}
+.subscribe__container {
+  width: 76.0416666667vw;
+  padding: 0 0.9375em;
+  margin: 0 auto;
+  padding: 4.4375rem 6.5625rem;
+  min-height: 20.1875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.875rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 1.875rem;
+  background-color: #37b5de;
+  background: url("../../assets/subscribe/fresh.png") center/cover;
+}
+.subscribe__title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22.3125rem;
+          flex: 0 1 22.3125rem;
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 3.125rem;
+  font-weight: 800;
+  line-height: 3.6875rem;
+  color: #ffffff;
+}
+@media (max-width: 991.98px) {
+  .subscribe {
+    padding: 3.75rem;
+  }
+  .subscribe__container {
+    padding: 2.1875rem 2.1875rem;
+  }
+}/*# sourceMappingURL=Subscribe.css.map */

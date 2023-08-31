@@ -1,0 +1,54 @@
+.testimonial-card {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 165%;
+  color: #525c60;
+}
+
+.testimonial-card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40.625vw;
+          flex: 0 1 40.625vw;
+  min-height: 21.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+}
+.testimonial-card__avatar {
+  border-radius: 50%;
+  display: block;
+  width: 7.1875rem;
+  height: 7.1875rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonial-card #stars {
+  fill: #ffa858;
+}
+.testimonial-card__text {
+  padding-bottom: 0.3125rem;
+  text-align: center;
+  padding: 0 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.875em;
+}
+.testimonial-card__name {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.5625rem;
+  font-weight: 600;
+  line-height: 1.8125rem;
+}
+.testimonial-card__position {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+}/*# sourceMappingURL=TestimonialCard.css.map */

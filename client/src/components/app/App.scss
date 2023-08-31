@@ -1,0 +1,14 @@
+@import "../../styles/variables", "../../styles/functions";
+.App {
+  min-height: 100vh;
+  padding-top: 20;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  :nth-child(2) & {
+    margin-top: vw(204);
+  }
+  .main {
+    width: 100%;
+  }
+}

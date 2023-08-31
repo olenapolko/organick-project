@@ -1,0 +1,65 @@
+.organick-only {
+  width: 100%;
+  margin-bottom: 8.75rem;
+  min-height: 67.0625rem;
+  background: url("../../assets/services/bg-poppies.png") no-repeat center/cover;
+}
+.organick-only__container {
+  width: 76.0416666667vw;
+  padding: 0 0.9375em;
+  margin: 0 auto;
+}
+.organick-only__content {
+  max-width: 41.875rem;
+  padding-top: 11.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.organick-only__subtitle {
+  font-family: "Yellowtail", cursive;
+  color: #7EB693;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.organick-only__subtitle, .organick-only__title {
+  text-transform: capitalize;
+  text-align: center;
+}
+.organick-only__title {
+  margin: 0.5rem 0 1.5625rem;
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 3.125rem;
+  font-weight: 800;
+  line-height: 3.6875rem;
+}
+.organick-only__text {
+  font-size: 1.125rem;
+  line-height: 165%;
+}
+.organick-only__btn {
+  width: 6.6875rem;
+  height: 6.6875rem;
+  border-radius: 50%;
+  background-color: #7EB693;
+  margin-top: 3.125rem;
+}
+@media (max-width: 991.98px) {
+  .organick-only {
+    margin-bottom: 3.75rem;
+    min-height: 50.1875rem;
+  }
+  .organick-only__content {
+    padding-top: 5.625rem;
+  }
+}/*# sourceMappingURL=OrganickOnly.css.map */

@@ -1,0 +1,101 @@
+.expert {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 165%;
+  color: #525c60;
+}
+
+.expert {
+  width: 28.125rem;
+  height: 38.4375rem;
+  border-radius: 1.875rem;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 600;
+  background-color: #f9f8f8;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-blend-mode: multiply;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.expert:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #ffffff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.expert__description {
+  width: 100%;
+  height: 17%;
+  padding: 0 1.625rem 1.0625rem 1.875rem;
+  margin-top: auto;
+}
+.expert__name {
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.5625rem;
+  font-weight: 800;
+  line-height: 1.8125rem;
+  margin-bottom: 0.25rem;
+}
+.expert__occupation {
+  font-family: "Yellowtail", cursive;
+  color: #7EB693;
+  font-size: 1.375rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.expert__details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.expert .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.0625rem;
+}
+.expert .social__link {
+  display: inline-block;
+  width: 1.375rem;
+  height: 1.375rem;
+}
+.expert .social .instagram-link {
+  background: url("../../assets/footer/insta.svg") center no-repeat;
+}
+.expert .social .facebook-link {
+  background: url("../../assets/footer/fb.svg") center no-repeat;
+}
+.expert .social .twitter-link {
+  background: url("../../assets/footer/twiter.svg") center no-repeat;
+}/*# sourceMappingURL=TeamCard.css.map */

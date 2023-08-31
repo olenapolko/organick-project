@@ -1,0 +1,32 @@
+@import "../../../styles/variables", "../../../styles/functions";
+.thank-you {
+  width: 100%;
+  height: vw(920);
+  min-height: rem(470);
+  padding: vw(94) vw(150) vw(269);
+  margin-top: rem(40);
+  background: url("../../../assets/thankYou/bg-wheat.png") no-repeat;
+  background-position: left rem(220);
+  background-size: 100% auto;
+  
+  &__title {
+    @include titleStyle(800, 70, 82);
+    text-align: center;
+  }
+
+  @include md-screens(){
+    &__title{
+      @include titleStyle(800, 45, 47);
+      margin-top: rem(60);
+    }
+  }
+
+  @include sm-screens(){
+    padding: rem(20) 0 rem(20);
+    margin-top: 0;
+    &__title{
+      @include titleStyle(800, 38, 42);
+    }
+   
+  }
+}

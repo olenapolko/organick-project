@@ -1,0 +1,29 @@
+.gallery {
+  width: 100%;
+  padding: 11.6875rem 0;
+  background-color: #f1f8f4;
+}
+.gallery__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2.625rem;
+}
+@media (max-width: 991.98px) {
+  .gallery__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .gallery {
+    padding: 5rem 0;
+  }
+}/*# sourceMappingURL=Gallery.css.map */

@@ -1,0 +1,36 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.header-cart {
+  min-width: rem(159);
+  height: rem(66);
+  border-radius: rem(33);
+  border: rem(1) solid #E0E0E0;
+  padding: rem(5) rem(6);
+  color: $main-text-color;
+  transition: all 0.2s ease-in-out;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    min-width: rem(56);
+    height: rem(56);
+    border-radius: 50%;
+    background: $main-text-color url("../../assets/header/cart-icon.svg") 45% no-repeat;
+  }
+
+  &__lable {
+    @include titleStyle(600, 18, 21);
+    margin-left: rem(15);
+  }
+  
+  &__count{
+    margin-left: rem(5);
+  }
+}

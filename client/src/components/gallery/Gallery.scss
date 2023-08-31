@@ -1,0 +1,24 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.gallery {
+  width: 100%;
+  padding: rem(187) 0;
+  background-color: #f1f8f4;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: rem(42);
+  }
+  @include md-screens() {
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  @include sm-screens(){
+    padding: rem(80) 0;
+  }
+}

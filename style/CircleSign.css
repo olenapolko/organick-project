@@ -1,0 +1,56 @@
+.circle-sign {
+  width: 10.9895833333vw;
+  height: 10.9895833333vw;
+  min-width: 9.875rem;
+  min-height: 9.875rem;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+.circle-sign::after {
+  content: "";
+  display: block;
+  width: 110%;
+  height: 110%;
+  border-radius: 50%;
+  border: 0.1875rem solid #7EB693;
+  position: absolute;
+}
+.circle-sign__amount {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 3.5625rem;
+}
+.circle-sign__achievement {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+}
+@media (max-width: 767.98px) {
+  .circle-sign__amount {
+    font-family: "Roboto", sans-serif;
+    color: #274c5b;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.25rem;
+  }
+}/*# sourceMappingURL=CircleSign.css.map */

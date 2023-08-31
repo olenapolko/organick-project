@@ -1,0 +1,190 @@
+.standards .farming__text, .standards .card__text, .standards__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 165%;
+  color: #525c60;
+}
+
+.standards {
+  width: 100%;
+  padding: 5rem 0 8.125rem;
+}
+.standards__container {
+  width: 76.0416666667vw;
+  padding: 0 0.9375em;
+  margin: 0 auto;
+}
+.standards__poster {
+  margin-bottom: 4.875rem;
+  width: 100%;
+}
+.standards__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 58.5rem;
+  margin: 0 auto;
+}
+.standards__subtitle {
+  font-family: "Yellowtail", cursive;
+  color: #7EB693;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.standards__title {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 3.125rem;
+  font-weight: 800;
+  line-height: 3.6875rem;
+  margin-bottom: 1.875rem;
+}
+.standards__text:not(last-of-type) {
+  margin-bottom: 3.125rem;
+}
+.standards__reason {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1.25rem;
+}
+.standards__reason:not(last-of-type) {
+  margin-bottom: 1.75rem;
+}
+.standards__img {
+  width: 40%;
+  border-radius: 1.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.standards .card {
+  background-color: #f9f8f8;
+  border-radius: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.25rem 2.8125rem;
+}
+.standards .card__title {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  line-height: 1.8125rem;
+  margin-bottom: 0.5rem;
+}
+.standards .farming {
+  margin-top: 4.375rem;
+}
+.standards .farming__title {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 2.1875rem;
+  font-weight: 800;
+  line-height: 2.5625rem;
+  margin-bottom: 0.75rem;
+}
+.standards .farming__text {
+  margin-bottom: 3.75rem;
+}
+.standards .farming__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.75rem;
+}
+.standards .farming__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5625rem;
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  line-height: 1.8125rem;
+  background-color: #f9f8f8;
+  padding: 0.9375rem 3.3125rem 0.9375rem 1.0625rem;
+  border-radius: 3.125rem;
+}
+.standards .farming__number {
+  width: 4.375rem;
+  height: 4.375rem;
+  background-color: #7EB693;
+  color: #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 991.98px) {
+  .standards {
+    padding: 3.75rem 0;
+  }
+  .standards__container {
+    width: 100vw;
+  }
+  .standards__content {
+    text-align: center;
+  }
+  .standards__title {
+    font-size: 2.5rem;
+  }
+  .standards__reason {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .standards__reason:last-of-type {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .standards__img {
+    width: 100%;
+  }
+  .standards .farming {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+  .standards .farming__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 767.98px) {
+  .standards {
+    padding: 1.875rem 0;
+  }
+}/*# sourceMappingURL=Standards.css.map */

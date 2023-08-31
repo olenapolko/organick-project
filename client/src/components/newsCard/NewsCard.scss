@@ -1,0 +1,65 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.news-card {
+  min-width: vw(430);
+  min-height: rem(524);
+  border-radius: rem(30);
+  flex: 0 1 rem(677);
+  position: relative;
+  background-size: cover;
+
+  &__date {
+    width: rem(82);
+    height: rem(82);
+    border-radius: 50%;
+    background-color: $white-color;
+    position: absolute;
+    top: rem(43);
+    left: rem(32);
+  }
+  .news-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+
+    &__day {
+      @include titleStyle(800, 25,29);
+    }
+    &__month {
+      @include titleStyle(800, 20, 23);
+    }
+  }
+
+  &__info {
+    width: percent(612, 677);
+    min-height: rem(274);
+    margin: 0 auto;
+    background-color: $white-color;
+    padding: rem(54) rem(57);
+    box-shadow: 0px 20px 35px rgba(167, 167, 167, 0.25);
+    border-radius: rem(31);
+    display: flex;
+    flex-direction: column;
+    gap: rem(15);
+    position: absolute;
+    bottom: rem(-66);
+    left: percent(32, 677);
+    right: percent(32, 677);
+  }
+
+  &__author-name {
+    @include titleStyle(400, 18, 21);
+    margin-left: rem(8);
+    vertical-align: bottom;
+  }
+
+  &__title {
+    @include titleStyle(800, 25, 29);
+  }
+
+  &__text {
+    @extend %main-text-style;
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../styles/variables", "../../styles/functions";
+.cart-form {
+  max-width: vw(1184);
+  display: flex;
+  flex-direction: column;
+  gap: vw(50);
+  @include titleStyle(500, 18, 21);
+
+  &__row {
+    display: flex;
+    gap: vw(46);
+  }
+
+  &__row-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(26);
+    width: percent(569, 1184);
+  }
+
+  &__input {
+    border-radius: rem(15);
+    border: 1px solid $bg-light-green;
+    padding: rem(30) rem(25);
+
+    &:focus:not(:placeholder-shown),
+    &:focus {
+      border-width: 2px;
+    }
+
+    &:not(:focus):not(:placeholder-shown):invalid {
+      border-color: #ec5a5a;
+    }
+    &:not(:focus):not(:placeholder-shown):valid {
+      border-color: $bg-light-green;
+    }
+  }
+  &__input::placeholder {
+    font-style: italic;
+    color: $main-text-color;
+  }
+  .message-input {
+    margin-top: rem(26);
+    width: 100%;
+    min-height: rem(247);
+  }
+  @include sm-screens() {
+    &__row-item {
+      width: 100%;
+    }
+    &__row {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+
+

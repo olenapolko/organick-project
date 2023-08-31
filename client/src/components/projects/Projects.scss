@@ -1,0 +1,24 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.projects {
+  width: 100%;
+  padding: rem(150) 0;
+  
+  &__container {
+    @include main-container();
+  }
+
+  &__content {
+    width: 100%;
+    margin-top: rem(60);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: rem(43) rem(25);
+    padding-bottom: rem(102);
+  }
+
+  @include md-screens() {
+    padding: rem(40) 0;
+  }
+}

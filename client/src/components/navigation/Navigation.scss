@@ -1,0 +1,72 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.navigation {
+  @include titleStyle(700, 20, 23);
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-of-type) {
+    margin-right: vw(42);
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center; 
+    color: $main-text-color;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+      transform: scale(1.1);
+      color: $bg-light-green;
+    }
+  }
+
+  &__icon{
+    margin-left: rem(5);
+    flex-shrink: 0; 
+  }
+
+  .show-submenu .submenu {
+    display: block;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+
+    @include sm-screens(){
+        display: block;
+        position: absolute; 
+        top: 50%; 
+        left: 100%;
+    }
+  }
+
+  .submenu {
+    display: none; 
+    background-color: $header-bg; 
+    padding: rem(20) rem(60);
+
+    &__item:not(:last-of-type){
+      margin-bottom: rem(25);
+    }
+
+    &__item{
+      color: $main-text-color;
+      transform: none;
+      transition: all 0.3s;
+      font-size: rem(18);
+
+      @include sm-screens(){
+        font-size: rem(28);
+    }
+    }
+
+    &__item:hover{
+      transform: scale(1.1);
+      color: $bg-light-green;
+    }
+  }
+}

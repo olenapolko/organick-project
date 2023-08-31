@@ -1,0 +1,48 @@
+.btn {
+  width: 13.75rem;
+  min-height: 4.9375rem;
+  border-radius: 1rem;
+  border: 0.125rem solid transparent;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn__icon {
+  margin-left: 0.625rem;
+}
+.gallery-card .btn {
+  width: 20rem;
+  min-height: 6rem;
+}
+
+.bright-btn.btn {
+  background-color: #efd372;
+}
+
+.dark-btn.btn {
+  background-color: #274c5b;
+  color: #ffffff;
+}
+
+.white-btn.btn {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+}
+
+.yellow-btn.btn {
+  background-color: #efd372;
+  color: #ffffff;
+}
+
+.btn-border {
+  border-color: #274c5b;
+}/*# sourceMappingURL=Button.css.map */

@@ -1,0 +1,16 @@
+.grow-item {
+  max-width: 24.375rem;
+  margin-bottom: 2.0625rem;
+}
+.grow-item__title {
+  margin: 0.3125rem 0;
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.5625rem;
+  font-weight: 500;
+  line-height: 1.8125rem;
+}
+.grow-item__description {
+  font-size: 1.125rem;
+  line-height: 165%;
+}/*# sourceMappingURL=GrowItem.css.map */

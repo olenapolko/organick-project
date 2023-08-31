@@ -1,0 +1,191 @@
+.why-us__content-wrapper {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 165%;
+  color: #525c60;
+}
+
+.why-us {
+  width: 100%;
+  min-height: 66.6875rem;
+  padding: 11.875rem 0;
+  background-color: #f9f8f8;
+}
+.why-us__container {
+  width: 76.0416666667vw;
+  padding: 0 0.9375em;
+  margin: 0 auto;
+}
+.why-us__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3.125rem;
+  margin-top: 0.875rem;
+  margin-left: auto;
+}
+.why-us__content {
+  max-width: 50%;
+  min-height: 38.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.why-us__subtitle {
+  font-family: "Yellowtail", cursive;
+  color: #7EB693;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.why-us__title {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 3.125rem;
+  font-weight: 800;
+  line-height: 3.6875rem;
+  min-width: 30rem;
+  margin-bottom: 1.5625rem;
+}
+.why-us__text {
+  width: 34.8958333333vw;
+  min-width: 25rem;
+}
+.why-us__img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2.5rem;
+}
+.why-us__list {
+  margin-top: 2.875rem;
+  margin-bottom: 2.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.5rem;
+}
+.why-us__item {
+  list-style-position: inside;
+  max-width: 28.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.why-us__reason {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 21.25rem;
+  height: 5rem;
+  background-color: #ECECEC;
+  position: relative;
+  padding: 1.875rem 3.75rem;
+  border-radius: 2.5rem;
+}
+.why-us__reason::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1.6875rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url("../../assets/whyUs/circle-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.why-us__explanation {
+  margin-left: 3.75rem;
+  margin-top: 0.75rem;
+}
+.why-us__cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.875rem;
+  margin-top: 6.25rem;
+}
+@media (max-width: 1230px) {
+  .why-us {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding: 5rem 0;
+  }
+  .why-us__content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.625rem;
+  }
+  .why-us__content {
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .why-us__title {
+    width: 100%;
+  }
+  .why-us__text {
+    width: 100%;
+  }
+  .why-us__img {
+    width: 100%;
+  }
+  .why-us__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .why-us__explanation {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .why-us {
+    padding: 3.75rem 0 3.75rem;
+  }
+  .why-us__container {
+    width: 100vw;
+  }
+  .why-us__title {
+    font-size: 2.5rem;
+  }
+}/*# sourceMappingURL=WhyUs.css.map */

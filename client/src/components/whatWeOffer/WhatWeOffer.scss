@@ -1,0 +1,49 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.what-we-offer {
+  width: 100%;
+  min-height: rem(890);
+  padding: rem(164) 0;
+  background-color: $main-text-color;
+  margin-bottom: rem(140);
+  
+  &__container {
+    @include main-container();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text{
+    max-width: 60%;
+    text-align: center;
+  }
+
+  &__subtitle {
+    @include subtitleStyle();
+  }
+  &__subtitle,
+  &__title {
+    text-transform: capitalize;
+  }
+  &__title {
+    margin-top: rem(8);
+    margin-bottom: rem(16); 
+    @include titleStyle();
+    color: $white-color;
+  }
+
+  &__content {
+    width: 100%;
+    margin-top: rem(60);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: rem(25);
+    padding-bottom: rem(102);
+  }
+
+  @include md-screens() {
+    padding: rem(60) 0;
+    margin-bottom: rem(60);
+  }
+}

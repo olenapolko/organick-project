@@ -1,0 +1,47 @@
+.discount-card {
+  min-width: 25rem;
+  max-width: 42.625rem;
+  min-height: 22.9375rem;
+  padding-left: 3.4375rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 35.5208333333vw;
+          flex: 1 1 35.5208333333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.875rem;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.discount-card:hover {
+  scale: 1.02;
+  -webkit-box-shadow: 0px 20px 35px rgba(167, 167, 167, 0.25);
+          box-shadow: 0px 20px 35px rgba(167, 167, 167, 0.25);
+}
+.discount-card__content {
+  width: 41.788856305%;
+}
+.discount-card__subtitle {
+  font-family: "Yellowtail", cursive;
+  color: #7EB693;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.discount-card__title {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 2.9375rem;
+}
+.white-text .discount-card__subtitle, .white-text .discount-card__title {
+  color: #ffffff;
+}/*# sourceMappingURL=DiscountCard.css.map */

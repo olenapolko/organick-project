@@ -1,0 +1,21 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.offer-card{
+    &__img-wrapper{
+        width: rem(335);
+        height: rem(314);
+        background-color: $white-color;
+        display: flex;
+        justify-content: center;
+        border-radius: rem(35);
+        overflow: hidden;
+
+    }
+
+    &__text{
+        @include titleStyle(500, 25, 23);
+        color: $white-color;
+        margin-top: rem(25);
+        text-align: center;
+    }
+}

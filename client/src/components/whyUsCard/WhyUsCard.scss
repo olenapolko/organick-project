@@ -1,0 +1,35 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.why-us-card {
+  width: rem(257);
+  height: rem(335);
+  border-radius: rem(30);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $white-color;
+
+  &__img-wrapper{
+    width: rem(95);
+    height: rem(95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white-smoke;
+    border-radius: rem(20);
+  }
+
+  &__title{
+    margin: rem(15) 0;
+    @include titleStyle(25, 29);
+  }
+
+  &__text{
+    max-width: rem(184);
+    @extend %main-text-style;
+    line-height: 165%;
+  }
+
+}

@@ -1,0 +1,99 @@
+.cart-form {
+  max-width: 61.6666666667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.6041666667vw;
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+}
+.cart-form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.3958333333vw;
+}
+.cart-form__row-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.625rem;
+  width: 48.0574324324%;
+}
+.cart-form__input {
+  border-radius: 0.9375rem;
+  border: 1px solid #7EB693;
+  padding: 1.875rem 1.5625rem;
+}
+.cart-form__input:focus:not(:-moz-placeholder-shown) {
+  border-width: 2px;
+}
+.cart-form__input:focus:not(:-ms-input-placeholder) {
+  border-width: 2px;
+}
+.cart-form__input:focus:not(:placeholder-shown), .cart-form__input:focus {
+  border-width: 2px;
+}
+.cart-form__input:not(:focus):not(:-moz-placeholder-shown):invalid {
+  border-color: #ec5a5a;
+}
+.cart-form__input:not(:focus):not(:-ms-input-placeholder):invalid {
+  border-color: #ec5a5a;
+}
+.cart-form__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: #ec5a5a;
+}
+.cart-form__input:not(:focus):not(:-moz-placeholder-shown):valid {
+  border-color: #7EB693;
+}
+.cart-form__input:not(:focus):not(:-ms-input-placeholder):valid {
+  border-color: #7EB693;
+}
+.cart-form__input:not(:focus):not(:placeholder-shown):valid {
+  border-color: #7EB693;
+}
+.cart-form__input::-webkit-input-placeholder {
+  font-style: italic;
+  color: #274c5b;
+}
+.cart-form__input::-moz-placeholder {
+  font-style: italic;
+  color: #274c5b;
+}
+.cart-form__input:-ms-input-placeholder {
+  font-style: italic;
+  color: #274c5b;
+}
+.cart-form__input::-ms-input-placeholder {
+  font-style: italic;
+  color: #274c5b;
+}
+.cart-form__input::placeholder {
+  font-style: italic;
+  color: #274c5b;
+}
+.cart-form .message-input {
+  margin-top: 1.625rem;
+  width: 100%;
+  min-height: 15.4375rem;
+}
+@media (max-width: 767.98px) {
+  .cart-form__row-item {
+    width: 100%;
+  }
+  .cart-form__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=CartForm.css.map */

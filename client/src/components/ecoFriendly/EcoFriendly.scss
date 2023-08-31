@@ -1,0 +1,39 @@
+@import "../../styles/variables", "../../styles/functions";
+.eco-friendly {
+  background: url("../../assets/eco/field.png") 0 0 / auto 100% no-repeat;
+  width: 100%;
+  min-height: rem(931);
+  padding: rem(100) 0 rem(108);
+
+  &__container {
+    @include main-container();
+    display: flex;
+  }
+  &__content {
+    min-height: rem(723);
+    padding: vw(78) vw(72) vw(77) vw(89);
+    flex: 0 1 rem(789);
+    margin-left: auto;
+    border-radius: rem(30);
+    background-color: $white-color;
+  }
+  &__subtitle {
+    @include subtitleStyle()
+  }
+  &__title {
+    @include titleStyle();
+    margin-top: rem(8);
+  }
+
+  &__item {
+    margin-top: rem(35);
+    width: vw(635);
+  }
+  &__item-title {
+    @include titleStyle(500, 25, 29);
+  }
+  &__item-text {
+    @extend %main-text-style;
+    font-weight: 500;
+  }
+}

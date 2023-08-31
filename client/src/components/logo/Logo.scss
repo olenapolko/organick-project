@@ -1,0 +1,20 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.logo {
+  height: rem(54);
+  display: flex;
+  align-items: center;
+
+  &__img {
+    width: rem(37);
+    height: rem(54);
+    background-image: url("../../assets/header//logo.png");
+    background-size: 100% 100%;
+    display: inline-block;
+  }
+  
+  &__text {
+    @include titleStyle(700, 38, 45);
+    margin-left: rem(8);
+  }
+}

@@ -1,0 +1,22 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Yellowtail&display=swap');
+
+* {
+    box-sizing: border-box;
+} 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    @extend %main-text-style;
+    font-weight: 400;
+    font-size: rem(18);
+    line-height: em(30);
+    color: $text-color;
+    .hidden {
+      visibility: hidden;
+    }
+}

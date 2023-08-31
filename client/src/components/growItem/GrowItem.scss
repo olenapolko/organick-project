@@ -1,0 +1,16 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.grow-item{
+    max-width: rem(390);
+    margin-bottom: rem(33);
+
+    &__title{
+        margin: rem(5) 0;
+        @include titleStyle(500, 25, 29);
+    }
+
+    &__description{
+        font-size: rem(18);
+        line-height: 165%;
+    }
+}

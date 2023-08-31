@@ -1,0 +1,39 @@
+.header-cart {
+  min-width: 9.9375rem;
+  height: 4.125rem;
+  border-radius: 2.0625rem;
+  border: 0.0625rem solid #E0E0E0;
+  padding: 0.3125rem 0.375rem;
+  color: #274c5b;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.header-cart:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.header-cart__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-cart__icon {
+  min-width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: #274c5b url("../../assets/header/cart-icon.svg") 45% no-repeat;
+}
+.header-cart__lable {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3125rem;
+  margin-left: 0.9375rem;
+}
+.header-cart__count {
+  margin-left: 0.3125rem;
+}/*# sourceMappingURL=Cart.css.map */

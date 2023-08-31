@@ -1,0 +1,120 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.about-us {
+  width: 100%;
+  min-height: rem(1067);
+  padding: rem(186) 0 rem(199);
+  
+  &__container {
+    @include main-container();
+  }
+  &__content-wrapper {
+    // flex: 0 1 vw(702);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: rem(14);
+    margin-left: auto;
+    @extend %main-text-style;
+  }
+  &__content{
+    max-width: rem(670);
+    min-height: rem(645);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__subtitle {
+    @include subtitleStyle();
+  }
+  &__title {
+    @include titleStyle();
+    width: vw(702);
+    min-width: rem(450);
+  }
+  &__text {
+    width: vw(702);
+    min-width: rem(400);
+  }
+
+  &__img{
+    width: 50%;
+    object-fit: contain;
+
+  }
+
+  // &__text:not(:last-of-type){
+  //   margin-bottom: rem(40);
+  // }
+
+  &__list {
+    margin-top: rem(46);
+    margin-bottom: rem(46);
+    display: flex;
+    justify-content: space-between;
+    gap: rem(40);
+  }
+
+  &__item {
+    list-style-position: inside;
+    max-width: rem(400);
+
+    &.equipment {
+      list-style-image: url("../../assets/about/tractor.svg");
+    }
+    &.hormones {
+      list-style-image: url("../../assets/about/plant.svg");
+    }
+  }
+  &__item-content {
+    display: inline-block;
+    vertical-align: top;
+    max-width: rem(235);
+    margin-left: 14px;
+    
+  }
+  &__item-title {
+    @include titleStyle(800, 25, 29);
+  }
+  &__item-text {
+    margin-top: rem(7);
+  }
+  @media (max-width: 1230px) {
+    transition: all 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+
+    &__content-wrapper {
+      flex-direction: column;
+    }
+
+    &__content{
+      max-width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__title{
+      width: 100%;
+    }
+
+    &__text{
+      width: 100%;
+    }
+
+    &__img{
+      width: 100%;
+    }
+  }
+
+  @include sm-screens(){
+    padding: rem(60) 0 rem(60);
+  
+    &__container {
+      width: 100vw;
+    }
+    &__title{
+      font-size:rem(40) ;
+    }
+  }
+}

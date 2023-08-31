@@ -1,0 +1,118 @@
+.about__content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 165%;
+  color: #525c60;
+}
+
+.about {
+  width: 100%;
+  min-height: 66.6875rem;
+  background-color: #f9f8f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url("../../assets/about/fruts.svg");
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../../assets/about/fruts.svg");
+  background-position: top 5.4375rem left 6.25rem;
+  background-repeat: no-repeat;
+  background-size: 48% 81%;
+  padding: 11.625rem 0 12.4375rem;
+}
+.about__container {
+  width: 76.0416666667vw;
+  padding: 0 0.9375em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+.about__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 36.5625vw;
+          flex: 0 1 36.5625vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 0.875rem;
+  margin-left: auto;
+}
+.about__subtitle {
+  font-family: "Yellowtail", cursive;
+  color: #7EB693;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.about__title {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 3.125rem;
+  font-weight: 800;
+  line-height: 3.6875rem;
+  width: 36.5625vw;
+  min-width: 28.125rem;
+}
+.about__text {
+  width: 36.5625vw;
+  min-width: 25rem;
+}
+.about__list {
+  margin-top: 2.875rem;
+  margin-bottom: 2.875rem;
+}
+.about__item {
+  list-style-position: inside;
+  width: 35.25rem;
+}
+.about__item.vegan-food {
+  list-style-image: url("../../assets/about/veganFoodRect.svg");
+}
+.about__item.email-box {
+  list-style-image: url("../../assets/about/mailboxQualityRect.svg");
+}
+.about__item-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 23.125vw;
+  min-width: 21.875rem;
+}
+.about__item-title {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.5625rem;
+  font-weight: 800;
+  line-height: 1.8125rem;
+}
+.about__item-text {
+  margin-top: 0.4375rem;
+}
+@media (max-width: 1230px) {
+  .about {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+  }
+}
+@media (max-width: 991.98px) {
+  .about {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.8))), url("../../assets/about/fruts.svg");
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url("../../assets/about/fruts.svg");
+    background-repeat: no-repeat;
+  }
+  .about__content {
+    width: 100%;
+    margin-left: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .about__container {
+    width: 100vw;
+  }
+  .about__title {
+    font-size: 2.5rem;
+  }
+}/*# sourceMappingURL=About.css.map */

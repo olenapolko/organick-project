@@ -1,0 +1,54 @@
+.why-us-card__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 165%;
+  color: #525c60;
+}
+
+.why-us-card {
+  width: 16.0625rem;
+  height: 20.9375rem;
+  border-radius: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+.why-us-card__img-wrapper {
+  width: 5.9375rem;
+  height: 5.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f9f8f8;
+  border-radius: 1.25rem;
+}
+.why-us-card__title {
+  margin: 0.9375rem 0;
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.8125rem;
+  font-weight: 25;
+  line-height: 3.6875rem;
+}
+.why-us-card__text {
+  max-width: 11.5rem;
+  line-height: 165%;
+}/*# sourceMappingURL=WhyUsCard.css.map */

@@ -1,0 +1,41 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.circle-sign {
+  width: vw(211);
+  height: vw(211);
+  min-width: rem(158);
+  min-height: rem(158);
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $title-font-name;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 110%;
+    height: 110%;
+    border-radius: 50%;
+    border: rem(3) solid $bg-light-green;
+    position: absolute;
+  }
+
+  &__amount {
+    @include titleStyle(800, 48, 57);
+  }
+
+  &__achievement {
+    @include titleStyle(600, 18, 24);
+    text-transform: capitalize;
+  }
+
+  @include sm-screens{
+    &__amount{
+      @include titleStyle(800, 32, 36)
+    }
+  }
+}

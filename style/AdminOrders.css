@@ -1,0 +1,65 @@
+.admin-orders table tbody tr {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 165%;
+  color: #525c60;
+}
+
+.admin-orders {
+  width: 100%;
+  padding: 10.25rem 0;
+}
+.admin-orders__container {
+  width: 76.0416666667vw;
+  padding: 0 0.9375em;
+  margin: 0 auto;
+}
+.admin-orders__subtitle {
+  font-family: "Yellowtail", cursive;
+  color: #7EB693;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.admin-orders__subtitle, .admin-orders__title {
+  text-transform: capitalize;
+}
+.admin-orders__title {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 3.125rem;
+  font-weight: 800;
+  line-height: 3.6875rem;
+}
+.admin-orders__content {
+  margin-top: 1rem;
+}
+.admin-orders table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1rem;
+  text-align: left;
+}
+.admin-orders table th,
+.admin-orders table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #d4d4d4;
+}
+.admin-orders table th {
+  font-family: "Roboto", sans-serif;
+  color: #274c5b;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.8125rem;
+  background-color: #8cbd9e;
+  color: #ffffff;
+}
+.admin-orders table tbody tr {
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.admin-orders table tbody tr:hover {
+  background-color: #EFF6F1;
+}/*# sourceMappingURL=AdminOrders.css.map */

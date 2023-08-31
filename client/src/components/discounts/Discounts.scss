@@ -1,0 +1,18 @@
+@import "../../styles/variables", "../../styles/functions";
+
+.discounts {
+  width: 100%;
+  padding: rem(154) 0 rem(190);
+  
+  &__container {
+    @include main-container();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(36);
+  }
+
+  @include sm-screens(){
+    padding: rem(80) 0;
+  }
+}
