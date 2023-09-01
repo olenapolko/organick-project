@@ -32,9 +32,7 @@ export function CartForm({ checkValidation, getUserInfo }) {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    if (name in formData) {
-      updateFormData(name, value);
-    }
+    updateFormData(name, value);
   };
 
     return(

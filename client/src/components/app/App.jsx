@@ -38,6 +38,7 @@ export function App() {
 
   const updateStore =()=>setStore(JSON.parse(localStorage.getItem('order')));
   const onToggleLoadMore = () => setAllProduct(!allProduct);
+  
   const providerValue = useMemo(()=>({store, updateStore, products, allProduct, onToggleLoadMore}), [store, products, allProduct]);
 
   return (

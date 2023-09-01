@@ -2,6 +2,22 @@ DROP DATABASE if exists organick;
 CREATE DATABASE IF NOT EXISTS organick;
 USE organick;
 
+CREATE TABLE category
+(
+   id int not null primary key AUTO_INCREMENT,
+   categoryName VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE `user`
+(
+   id int not null primary key auto_increment,
+   userName varchar(20) not null,
+   surName varchar(20) not null,
+   phone varchar(10) not null,
+   email varchar(30),
+   address varchar(50)
+);
+
 CREATE TABLE subscriber
 (
    id int not null primary key auto_increment,
@@ -26,22 +42,6 @@ CREATE TABLE testimonial
    text varchar(100) not null,
    stars int not null,
    imagePath varchar(100)
-);
-
-CREATE TABLE category
-(
-   id int not null primary key AUTO_INCREMENT,
-   categoryName VARCHAR(20) NOT NULL
-);
-
-CREATE TABLE `user`
-(
-   id int not null primary key auto_increment,
-   userName varchar(20) not null,
-   surName varchar(20) not null,
-   phone varchar(10) not null,
-   email varchar(30),
-   address varchar(50)
 );
 
 CREATE TABLE `order`

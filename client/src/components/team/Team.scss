@@ -42,4 +42,8 @@
     gap: rem(25);
     padding-bottom: rem(102);
   }
+
+  @include sm-screens(){
+    padding: rem(80) 0 rem(40);
+  }
 }

@@ -56,4 +56,9 @@
       flex-wrap: wrap;
   gap: 1.5625rem;
   padding-bottom: 6.375rem;
+}
+@media (max-width: 767.98px) {
+  .team {
+    padding: 5rem 0 2.5rem;
+  }
 }/*# sourceMappingURL=Team.css.map */

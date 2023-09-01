@@ -1,5 +1,4 @@
 import './ProductsLayout.scss';
-
 import { useState, useRef, useContext } from "react";
 import { getDiscountSum, getDiscountPrice, sliceProducts, showDetails, setSelected  } from "../../utils/productsUtils";
 import { LocalStorageContext } from "../app/App";
