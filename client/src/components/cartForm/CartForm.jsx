@@ -46,7 +46,7 @@ export function CartForm({ checkValidation, getUserInfo }) {
                     type="text"
                     name="fullName"
                     className="cart-form__input"
-                    placeholder="Want to work with Sigma"
+                    placeholder="Your Name"
                     pattern="^(\w{2,})+\s(\w+)$"
                     required
                     value={formData.fullName}
@@ -61,7 +61,7 @@ export function CartForm({ checkValidation, getUserInfo }) {
                     type="email"
                     name="email"
                     className="cart-form__input"
-                    placeholder="Sigma@loves.you"
+                    placeholder="example@yourmail.com"
                     pattern="[a-z0-9._]+@[a-z.-]+\.[a-z]{2,}$"
                     required
                     value={formData.email}
@@ -78,7 +78,7 @@ export function CartForm({ checkValidation, getUserInfo }) {
                     type="text"
                     name="address"
                     className="cart-form__input"
-                    placeholder="Sigma address"
+                    placeholder="Your address"
                     pattern="^[\w\s]+,\s[\w\s]+\s\d+$"
                     required
                     value={formData.address}
@@ -104,7 +104,7 @@ export function CartForm({ checkValidation, getUserInfo }) {
               <label htmlFor="message">
                 Message
                 <textarea
-                  placeholder="Something"
+                  placeholder="Some extra information"
                   className="cart-form__input message-input"
                   pattern="\w\s"
                   name="message"
