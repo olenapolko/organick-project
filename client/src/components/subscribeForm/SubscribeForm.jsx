@@ -15,7 +15,6 @@ export function SubscribeForm() {
     event.preventDefault(); 
     try {
       await addSubscriber(email);
-      console.log("Subscriber added successfully");
       setEmail("");
     } catch (error) {
       console.error("Error adding subscriber", error);

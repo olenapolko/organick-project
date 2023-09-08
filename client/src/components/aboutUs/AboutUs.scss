@@ -9,7 +9,6 @@
     @include main-container();
   }
   &__content-wrapper {
-    // flex: 0 1 vw(702);
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -42,10 +41,6 @@
     object-fit: contain;
 
   }
-
-  // &__text:not(:last-of-type){
-  //   margin-bottom: rem(40);
-  // }
 
   &__list {
     margin-top: rem(46);

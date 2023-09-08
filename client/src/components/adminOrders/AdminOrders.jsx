@@ -18,6 +18,18 @@ function AdminOrders() {
     fetchData();
   }, []);
 
+  function formatDate(incomingDate) {
+    const date = new Date(incomingDate);
+    const year = date.getUTCFullYear();
+    const month = String(date.getUTCMonth() + 1).padStart(2, "0");
+    const day = String(date.getUTCDate()).padStart(2, "0");
+    const hours = String(date.getUTCHours()).padStart(2, "0");
+    const minutes = String(date.getUTCMinutes()).padStart(2, "0");
+    const seconds = String(date.getUTCSeconds()).padStart(2, "0");
+  
+    return `${year}-${month}-${day}, ${hours}:${minutes}:${seconds}`;
+  }
+
   return (
     <section className='admin-orders'>
       <div className="admin-orders__container">
@@ -27,11 +39,9 @@ function AdminOrders() {
           <table>
             <thead>
               <tr>
-                <th>ID</th>
-                <th>User Name</th>
-                <th>User Surname</th>
-                <th>Email</th>
-                <th>Phone</th>
+                <th>Order ID</th>
+                <th>Order time</th>
+                <th>User ID</th>
                 <th>Message</th>
               </tr>
             </thead>
@@ -39,15 +49,12 @@ function AdminOrders() {
               {orders.map(order => (
                 <tr key={order.id}>
                   <td>{order.id}</td>
-                  <td>{order.userName}</td>
-                  <td>{order.surName}</td>
-                  <td>{order.email}</td>
-                  <td>{order.phone}</td>
+                  <td>{formatDate(order.date)}</td>
+                  <td>{order.userId}</td>
                   <td>{order.message}</td>
                 </tr>
               ))}
             </tbody>
-
           </table>
         </div>
       </div>

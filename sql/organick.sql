@@ -13,7 +13,7 @@ CREATE TABLE `user`
    id int not null primary key auto_increment,
    userName varchar(20) not null,
    surName varchar(20) not null,
-   phone varchar(10) not null,
+   phone varchar(25) not null,
    email varchar(30),
    address varchar(50)
 );
@@ -47,12 +47,10 @@ CREATE TABLE testimonial
 CREATE TABLE `order`
 (
    id int not null primary key auto_increment,
-   userName varchar(20) not null,
-   surName varchar(20) not null,
-   email varchar(30),
-   phone varchar(20) not null,
+   `date` datetime not null,
    message varchar(100),
-   products varchar(200)
+   userId INT NOT NULL,
+   FOREIGN KEY (userId) REFERENCES `user` (id)
 );
 
 CREATE TABLE product
@@ -215,8 +213,35 @@ VALUES
 
 select * from category;
 select * from `order`;
+select * from `user`;
 select * from product;
+select * from product_order;
 select * from experts;
 select * from projects;
 select * from news;
+
+SELECT 
+    o.id AS order_id,
+    o.date,
+    o.message,
+    u.id AS user_id,
+    u.userName,
+    u.surName,
+    u.phone,
+    u.email,
+    u.address,
+    p.id AS product_id,
+    p.categoryId,
+    p.productName,
+    p.description,
+    p.price,
+    p.discount,
+    po.quantity,
+    po.productPrice,
+    po.productDiscount
+FROM `user` u
+JOIN `order` o ON u.id = o.userId
+JOIN product_order po ON o.id = po.orderId
+JOIN product p ON po.productId = p.id;
+
 

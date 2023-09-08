@@ -14,8 +14,11 @@ export async function addUser({ userName, surName, phone, email, address }) {
     return await axios.post("/user", user);
 }
 
-export async function addOrder({userName, surName, email, phone, message, products}) {
-    const order = {userName, surName, email, phone, message, products};
+export async function getAllUsers() {
+    return await axios.get("/user");
+}
+
+export async function addOrder(order) {
     return await axios.post("/order", order);
 }
 

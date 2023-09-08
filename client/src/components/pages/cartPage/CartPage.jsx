@@ -63,7 +63,7 @@ export function CartPage() {
       navigate("/thanks",{replace:true});
     }
   }
-  
+
   const sendOrder = (userInfo)=>{
     addUser(userInfo)
     .then(res =>{
@@ -74,18 +74,12 @@ export function CartPage() {
         const {id:productId,quantity,discountPrice:productPrice, discountSum:productDiscount}=product;
         return ({productId,userId:insertId,quantity,productPrice, productDiscount})
       })
-
-      const orderData = {
-        products,
-        message,
-        userName: userInfo.userName,
-        surName: userInfo.surName,
-        email: userInfo.email,
-        phone: userInfo.phone
-      };
-
-      addOrder(orderData);
-     })
+      try {
+        addOrder({products,message, insertId})
+      } catch (error) {
+        console.error("Error preparing order data:", error);
+      }
+     }) 
   }
 
   return (
@@ -120,7 +114,7 @@ export function CartPage() {
             <div className="cart__customer-form" >
               {
                 order 
-                ?<CartForm
+                ?<CartForm 
                 checkValidation={checkFormIsValid}
                 getUserInfo={getUserInfo} /> 
                 : null
@@ -129,7 +123,7 @@ export function CartPage() {
             </div>
             <Button 
               className={"dark-btn cart__btn" + (isFormValid ? " yellow-btn": "")}
-              text={order ? "Confifm":"To order"} 
+              text={order ? "Confirm":"To order"} 
               icon
               action = {toOrder} />
           </div>
@@ -138,6 +132,5 @@ export function CartPage() {
     </section>
   );
 }
-
 
 

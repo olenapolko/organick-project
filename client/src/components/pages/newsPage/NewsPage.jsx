@@ -8,10 +8,8 @@ import { getAllNews } from "../../../fetches/fetches";
 import patterns from '../../../assets/news/patterns.svg';
 import bgLeaves from '../../../assets/news/bg-leaves.png';
 
-
 export function NewsPage(){
     const backgroundUrls = [patterns, bgLeaves];
-
     const [newsData, setNewsData] = useState([]);
 
     useEffect(() => {
