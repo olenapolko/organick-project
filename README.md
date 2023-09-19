@@ -1,10 +1,32 @@
-# A dynamic online store for organic products using React and Node.js.
+# Organic - A dynamic online store for organic products.
 
 ## Description
 The project is an online platform designed to facilitate the purchase of organic products. It combines front-end technologies like **React** with back-end technologies like **Node.js** to create a user-friendly and interactive online store. Users can explore a variety of organic products, view detailed information about each item, add products to their shopping cart, and place orders. The project also includes features such as dynamic product sorting, real-time updates on cart contents and costs, and a responsive design to ensure a seamless experience across devices. Additionally, the project incorporates database integration using **MySQL** to manage product data and order information. The project is fully responsive, ensuring an optimal user experience on various devices.
 
-## Instructions for starting this project:
+To see the deployed version of the project, please follow the link: 
+https://organick-project-app.netlify.app/
 
+## Tech Stack
+Frontend:
+* React
+* React Router Dom
+* Axios
+* Sass
+* FontAwesome
+* uniqid
+
+Backend:
+* Node.js
+* Express
+* Cors
+* Dotenv
+* MySQL
+
+Database:
+* MySQL
+
+## Instructions for starting this project:
+For starting the project localy, please copy the repository.
 Before you begin, ensure you have MySQL Workbench installed. 
 
 ### Database Setup:
